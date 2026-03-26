@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medborgarskapsprov — Din väg till svenskt medborgarskap 2026</title>
+<meta name="description" content="Allt du behöver veta för att bli svensk medborgare. Nya krav från 2026: hemvisttid, språkprov, samhällskunskapstest, försörjning. Förbered dig redan nu.">
+<link rel="canonical" href="https://medborgarskapsprov.com/">
+<meta property="og:title" content="Bli svensk — Din väg till medborgarskap">
+<meta property="og:description" content="Nya krav från juni 2026. Språkprov, samhällskunskapstest, 8 års hemvist. Se hela vägen och börja förbereda dig.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://medborgarskapsprov.com/">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{font-size:16px;-webkit-font-smoothing:antialiased;}
+body{font-family:"Lexend",system-ui,sans-serif;background:#f8f7f4;color:#0f172a;min-height:100vh;}
+a{color:inherit;}
+
+.header{background:#0f172a;border-bottom:3px solid #006AA7;padding:0 2rem;height:56px;display:flex;align-items:center;justify-content:space-between;}
+.header-brand{display:flex;align-items:center;gap:12px;}
+.flag{width:22px;height:15px;background:#006AA7;border-radius:2px;position:relative;overflow:hidden;flex-shrink:0;}
+.flag::before{content:'';position:absolute;top:0;left:6px;width:2.5px;height:100%;background:#FECC02;}
+.flag::after{content:'';position:absolute;top:6px;left:0;width:100%;height:2.5px;background:#FECC02;}
+.header-title{font-size:.92rem;font-weight:600;color:#fff;}
+.header-sub{font-size:.68rem;color:#64748b;}
+.header-cta{font-size:.78rem;font-weight:600;color:#fff;background:#006AA7;padding:.45rem 1.1rem;border-radius:.5rem;text-decoration:none;transition:opacity .15s;}
+.header-cta:hover{opacity:.85;}
+
+.hero{max-width:800px;margin:0 auto;padding:4.5rem 2rem 3rem;text-align:center;}
+.hero-flag{font-size:3rem;margin-bottom:1rem;}
+.hero h1{font-size:2.4rem;font-weight:700;letter-spacing:-.035em;line-height:1.15;margin-bottom:1rem;}
+.hero h1 span{color:#006AA7;}
+.hero-sub{font-size:1.05rem;color:#57534e;line-height:1.7;max-width:600px;margin:0 auto 2.5rem;}
+
+/* Timeline */
+.timeline{max-width:700px;margin:0 auto;padding:0 2rem 3rem;}
+.tl-title{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#006AA7;margin-bottom:.5rem;text-align:center;}
+.tl-heading{font-size:1.4rem;font-weight:700;letter-spacing:-.025em;text-align:center;margin-bottom:2rem;}
+
+.tl-item{display:flex;gap:1.2rem;margin-bottom:1.2rem;align-items:flex-start;}
+.tl-dot{width:36px;height:36px;border-radius:50%;background:#006AA7;color:#fff;display:flex;align-items:center;justify-content:center;font-size:.82rem;font-weight:700;flex-shrink:0;margin-top:.1rem;}
+.tl-content{flex:1;}
+.tl-label{font-size:.88rem;font-weight:700;margin-bottom:.2rem;}
+.tl-text{font-size:.82rem;color:#78716c;line-height:1.55;}
+.tl-tag{display:inline-block;font-size:.65rem;font-weight:700;padding:.15rem .5rem;border-radius:.3rem;margin-left:.4rem;vertical-align:middle;}
+.tl-tag.new{background:#fef3c7;color:#92400e;}
+.tl-tag.existing{background:#e7e5e4;color:#78716c;}
+
+/* CTA section */
+.cta-section{max-width:800px;margin:0 auto;padding:0 2rem 3rem;text-align:center;}
+.cta-box{background:#fff;border:1.5px solid #e7e5e4;border-radius:1rem;padding:2.5rem 2rem;}
+.cta-title{font-size:1.3rem;font-weight:700;margin-bottom:.5rem;}
+.cta-sub{font-size:.88rem;color:#78716c;line-height:1.6;max-width:520px;margin:0 auto 1.5rem;}
+.cta-buttons{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem;}
+.btn-primary{display:inline-block;padding:.85rem 2rem;background:#006AA7;color:#fff;border-radius:.7rem;font-family:inherit;font-size:.92rem;font-weight:700;text-decoration:none;transition:opacity .15s;}
+.btn-primary:hover{opacity:.88;}
+.btn-outline{display:inline-block;padding:.85rem 2rem;border:1.5px solid #d6d3d1;color:#57534e;border-radius:.7rem;font-family:inherit;font-size:.92rem;font-weight:600;text-decoration:none;transition:border-color .15s;}
+.btn-outline:hover{border-color:#006AA7;color:#006AA7;}
+.cta-note{font-size:.75rem;color:#a8a29e;}
+.cta-note strong{color:#57534e;}
+
+/* Info grid */
+.info-section{max-width:800px;margin:0 auto;padding:0 2rem 3rem;}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.75rem;}
+.info-card{background:#fff;border:1.5px solid #e7e5e4;border-radius:.85rem;padding:1.2rem 1.4rem;}
+.info-icon{font-size:1.3rem;margin-bottom:.5rem;}
+.info-title{font-size:.85rem;font-weight:700;margin-bottom:.25rem;}
+.info-text{font-size:.78rem;color:#78716c;line-height:1.5;}
+
+.footer{max-width:800px;margin:0 auto;padding:2rem;border-top:1px solid #e7e5e4;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;font-size:.72rem;color:#a8a29e;}
+.footer a{color:#006AA7;text-decoration:none;font-weight:500;}
+
+@media(max-width:640px){
+  .hero h1{font-size:1.7rem;}
+  .tl-item{gap:.8rem;}
+  .header{padding:0 1rem;}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-brand">
+    <div class="flag"></div>
+    <div>
+      <div class="header-title">Medborgarskapsprov.com</div>
+      <div class="header-sub">powered by CivicLearn</div>
+    </div>
+  </div>
+  <a href="https://civiclearn.com/sweden/checkout.html" class="header-cta">Börja förbereda dig</a>
+</header>
+
+<section class="hero">
+  <div class="hero-flag">🇸🇪</div>
+  <h1>Din väg till att <span>bli svensk medborgare</span></h1>
+  <p class="hero-sub">
+    Från den 6 juni 2026 gäller nya, skärpta krav för svenskt medborgarskap.
+    Här får du hela bilden — vad som krävs, vad som är nytt och hur du
+    kan börja förbereda dig redan idag.
+  </p>
+</section>
+
+<section class="timeline">
+  <div class="tl-title">Kraven</div>
+  <h2 class="tl-heading">Vad krävs för att bli svensk medborgare?</h2>
+
+  <div class="tl-item">
+    <div class="tl-dot">1</div>
+    <div class="tl-content">
+      <div class="tl-label">Hemvist i Sverige — 8 år <span class="tl-tag new">Nytt: var 5 år</span></div>
+      <div class="tl-text">Du måste ha bott i Sverige i minst 8 år med giltigt uppehållstillstånd. Undantag: 2 år för nordiska medborgare, 5 år för statslösa, 7 år för flyktingar och sambor till svenska medborgare.</div>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-dot">2</div>
+    <div class="tl-content">
+      <div class="tl-label">Samhällskunskapstest <span class="tl-tag new">Nytt</span></div>
+      <div class="tl-text">Godkänt prov i samhällskunskap om Sverige — demokrati, historia, lagar, samhälle. Göteborgs universitet utvecklar testet. Väntas augusti 2026.</div>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-dot">3</div>
+    <div class="tl-content">
+      <div class="tl-label">Språkprov i svenska <span class="tl-tag new">Nytt</span></div>
+      <div class="tl-text">B1 i läsning och hörförståelse, A2 i skrift och tal. Stockholms universitet utvecklar provet. Väntas tidigast oktober 2027.</div>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-dot">4</div>
+    <div class="tl-content">
+      <div class="tl-label">Försörjningskrav <span class="tl-tag new">Nytt</span></div>
+      <div class="tl-text">Du ska kunna försörja dig själv — minst 3 inkomstbasbelopp per år (ca 250 200 kr/år, 20 850 kr/mån brutto). Högst 6 månaders försörjningsstöd under de senaste 3 åren.</div>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-dot">5</div>
+    <div class="tl-content">
+      <div class="tl-label">Skötsamt och hederligt levnadssätt <span class="tl-tag existing">Skärpt</span></div>
+      <div class="tl-text">Inga allvarliga brott, inga skulder. Även brottslighet utanför Sverige räknas. Karenstider förlängs.</div>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-dot">6</div>
+    <div class="tl-content">
+      <div class="tl-label">Styrkt identitet <span class="tl-tag existing">Oförändrat</span></div>
+      <div class="tl-text">Giltig identitetshandling (pass). Identiteten måste vara klarlagd.</div>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-dot">7</div>
+    <div class="tl-content">
+      <div class="tl-label">Permanent uppehållstillstånd <span class="tl-tag existing">Oförändrat</span></div>
+      <div class="tl-text">Du måste ha permanent uppehållstillstånd (PUT) för att ansöka om medborgarskap.</div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="cta-box">
+    <div class="cta-title">Börja med samhällskunskapen</div>
+    <p class="cta-sub">
+      Samhällskunskapsprovet är det första testet som väntas vara klart. 800 övningsfrågor
+      i alla 7 ämnen — med förklaringar, simuleringar och framsteg i realtid.
+    </p>
+    <div class="cta-buttons">
+      <a href="https://civiclearn.com/sweden/checkout.html" class="btn-primary">Samhällskunskap — 499 kr</a>
+      <a href="https://civiclearn.com/sweden/checkout.html?plan=bundle" class="btn-outline">+ Språkprov = 999 kr</a>
+    </div>
+    <p class="cta-note"><strong>Engångsbetalning, livstidsåtkomst.</strong> Inga prenumerationer.</p>
+  </div>
+</section>
+
+<section class="info-section">
+  <div class="info-grid">
+    <div class="info-card">
+      <div class="info-icon">🌍</div>
+      <div class="info-title">Dubbelt medborgarskap</div>
+      <div class="info-text">Sverige tillåter dubbelt medborgarskap sedan 2001. Du behöver inte ge upp ditt nuvarande.</div>
+    </div>
+    <div class="info-card">
+      <div class="info-icon">🗳</div>
+      <div class="info-title">Rösträtt i alla val</div>
+      <div class="info-text">Som medborgare får du rösträtt i riksdagsval och EU-val, utöver de kommunala val du redan har.</div>
+    </div>
+    <div class="info-card">
+      <div class="info-icon">🇪🇺</div>
+      <div class="info-title">EU-medborgarskap</div>
+      <div class="info-text">Svenskt medborgarskap ger automatiskt EU-medborgarskap med fri rörlighet inom unionen.</div>
+    </div>
+    <div class="info-card">
+      <div class="info-icon">👶</div>
+      <div class="info-title">Medborgarskap för barn</div>
+      <div class="info-text">Dina barn kan också få svenskt medborgarskap. Kunskapskrav gäller från 16 års ålder.</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>© 2026 medborgarskapsprov.com · powered by <a href="https://civiclearn.com">CivicLearn</a></div>
+  <div><a href="/cdn-cgi/l/email-protection#fb888e8b8b94898fbb98928d9298979e9a8995d5989496">
